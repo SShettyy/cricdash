@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cricket Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="header">
+    <h1>Cricket Dashboard</h1>
+  </div>
+  <div class="tabs">
+    <button class="tablink" onclick="openTab('batsman')">Batsman</button>
+    <button class="tablink" onclick="openTab('bowler')">Bowler</button>
+    <button class="tablink" onclick="openTab('venue')">Venue</button>
+    <button class="tablink" onclick="openTab('innings')">Innings Type</button>
+    <!-- Add more buttons for other sections if needed -->
+  </div>
+
+  <div id="batsman" class="tabcontent">
+    <!-- Content for Batsman section goes here -->
+    <h2>Batsman Information</h2>
+    <div class="player-card">
+      <img src="path/to/virat_kohli.jpg" alt="Virat Kohli" class="player-avatar">
+      <div class="player-info">
+        <div class="player-name">Virat Kohli</div>
+        <div class="player-stats">
+          <div class="player-stat">Runs: 11235</div>
+          <div class="player-stat">Average: 59.79</div>
+          <div class="player-stat">Strike Rate: 93.39</div>
+        </div>
+        <div class="player-more-info" onclick="showPlayerDetails('Virat Kohli')">More Info</div>
+      </div>
+    </div>
+    <!-- Add more player cards here -->
+  </div>
+  <div id="bowler" class="tabcontent">
+    <!-- Content for Bowler section goes here -->
+    <h2>Bowler Information</h2>
+    <div class="player-card">
+      <img src="path/to/jasprit_bumrah.jpg" alt="Jasprit Bumrah" class="player-avatar">
+      <div class="player-info">
+        <div class="player-name">Jasprit Bumrah</div>
+        <div class="player-stats">
+          <div class="player-stat">Wickets: 205</div>
+          <div class="player-stat">Average: 22.10</div>
+          <div class="player-stat">Economy: 4.50</div>
+        </div>
+        <div class="player-more-info" onclick="showPlayerDetails('Jasprit Bumrah')">More Info</div>
+      </div>
+    </div>
+    <!-- Add more player cards here -->
+  </div>
+  <div id="venue" class="tabcontent">
+    <!-- Content for Venue section goes here -->
+    <h2>Venue Information</h2>
+    <div class="venue-card">
+      <div class="venue-name">Eden Gardens, Kolkata</div>
+      <div class="venue-location">Location: Kolkata, India</div>
+      <div class="venue-capacity">Capacity: 66,000</div>
+    </div>
+    <!-- Add more venue cards here -->
+  </div>
+  <div id="innings" class="tabcontent">
+    <!-- Content for Innings Type section goes here -->
+    <h2>Innings Type</h2>
+    <div class="innings-type">Day/Night</div>
+    <!-- Add more innings type info here -->
+  </div>
+
+  <!-- Add more divs for other sections if needed -->
+
+  <script src="script.js"></script>
+</body>
+</html>
